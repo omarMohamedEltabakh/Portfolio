@@ -1,0 +1,39 @@
+footer {
+    width: 90%;
+    margin: auto;
+}
+
+footer a {
+    padding: 0 !important;
+}
+
+footer ul li a,
+footer p {
+    color: var(--subtitle);
+    transition: .3s all ease-in;
+}
+
+footer ul li a:hover{
+    color: var(--blue);
+}
+footer ul li{
+    transition: .3s ease-in all !important;
+}
+footer ul :hover{
+    color: var(--blue);
+    transform: scale(1.05);
+}
+
+@media(max-width:991px){
+    footer div{
+        display: flex;
+        justify-content: center;
+    }
+    .madeByWith{
+        margin-top: 20px !important;
+    }
+
+}
+.madeByWith{
+    text-align: right;
+}

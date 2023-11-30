@@ -1,0 +1,122 @@
+/*global attribute ============================================>*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+    --primary: #000;
+    --secondary: rgb(24 24 27);
+    --border: rgba(63, 63, 70, 0.4);
+
+    --title: rgb(244 244 245);
+    --subtitle: rgb(161 161 170);
+
+    --bgHeader: #252529;
+    --blue: rgb(93, 188, 252);
+    --mainColorForNav: #b8b8bc;
+
+    --border2: rgba(244, 165, 96, 0.249);
+    --border3: #ed8303;
+    --border4: #2dd4bf;
+    --bgc-from: #1d1d21;
+    --colorForMainContent: rgba(36, 37, 46, 1);
+    --contactUsColor: rgba(63, 63, 70, 0.15);
+    --contactUsColorBtn: rgba(63, 63, 70, 0.15);
+
+
+}
+
+
+.light {
+    --contactUsColorBtn: #24252e;
+    --contactUsColor: white;
+    --colorForMainContent: #24252e;
+    --primary: rgb(250, 250, 250);
+    --secondary: rgb(255, 255, 255);
+    --border: rgba(202, 202, 202, 0.518);
+
+    --title: rgb(39 39 42);
+    --subtitle: rgb(82 82 91);
+
+    --bgHeader: rgb(253, 253, 253);
+    --blue: rgb(0, 149, 246);
+
+    --mainColorForNav: rgb(39 39 42);
+
+
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: var(--primary) !important;
+    color: #fff !important;
+}
+
+
+.allContent {
+    width: 80% !important;
+    margin: auto;
+    background-color: var(--secondary);
+}
+
+@media(max-width:574px) {
+    .allContent {
+        width: 90% !important;
+    }
+}
+
+@media(max-width:450px) {
+    .allContent {
+        width: 97% !important;
+    }
+}
+
+.borderMe {
+    border: red 2px solid;
+}
+
+.divider {
+    border-bottom: 1px solid var(--border);
+    margin: 3rem 0;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+
+li {
+    list-style: none !important;
+}
+
+
+/* for scroll par */
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+    border: 7px solid #292c3b;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+
+    background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+button:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}

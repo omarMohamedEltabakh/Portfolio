@@ -1,0 +1,97 @@
+.mainContent {
+    width: 90%;
+    margin: auto;
+}
+
+.mainContent .col1content>button {
+    all: unset;
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    background-color: var(--colorForMainContent) !important;
+    margin-top: 12px;
+    cursor: pointer;
+    opacity: .5;
+    transition: .2s all ease-in;
+    text-transform: capitalize;
+}
+
+.mainContent .col1content>button:hover {
+    opacity: 1 !important;
+}
+
+.mainContent .col1content .activeMine {
+    border: 1px solid var(--blue) !important;
+    opacity: 1 !important;
+    font-weight: 700 !important;
+
+}
+
+
+.mainContent .col2Content .cartContent .paragraph {
+    color: var(--subtitle);
+}
+
+.mainContent .col2Content .cartContent {
+    background-color: #242427;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+.mainContent .col2Content .cartContent:hover {
+    border: 1px solid var(--blue);
+    rotate: 1deg;
+    scale: 1.01;
+    cursor: pointer;
+}
+
+.light .mainContent .col2Content .cartContent {
+    background: white;
+}
+
+.mainContent .col2Content .cartContent h5 {
+    color: var(--title);
+}
+
+.mainContent .col2Content .cartContent .details {
+    color: var(--blue);
+}
+
+.mainContent .col2Content .cartContent .icon {
+    font-size: 17px !important;
+}
+
+.mainContent .col2Content .cartContent .icon i,
+.mainContent .col2Content .cartContent .icon a {
+    transition: .1s all ease-in-out;
+    color: var(--title) !important;
+}
+
+.mainContent .col2Content .cartContent .icon i:hover {
+    transform: scale(1.05);
+}
+
+@media(max-width:1150px) {
+    .mainContent .col1content {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .mainContent .col2Content{
+        margin-top: 20px;
+    }
+
+    .mainContent .col1content>button {
+        font-weight: 400;
+        width: 130px;
+       margin-left: 10px;
+        height: 45px;
+    }
+}
